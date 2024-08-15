@@ -1,5 +1,5 @@
 {% set name = "txl-kernel" %}
-{% set version = "0.2.13" %}
+{% set version = "0.2.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_kernel-{{ version }}.tar.gz
-  sha256: f8f17d3bb99a937d7adfc7f6060656c99ae59c0b9b8d0fb307ed907d7f58f519
+  sha256: bc47de49ac6e0d55c7cd9d9bfee586a2b7a9b7300391bb1adb927e9e8478821d
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - hatchling
   run:
     - python >=3.10
-    - txl
-    - asphalt
+    - txl >=0.2.18,<0.3.0
+    - asphalt >=4.0.0,<5.0.0
     - python-dateutil >=2.8.2
     - pycrdt >=0.8.11,<0.9.0
 
