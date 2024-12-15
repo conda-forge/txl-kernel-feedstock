@@ -1,13 +1,13 @@
 {% set name = "txl-kernel" %}
-{% set version = "0.2.14" %}
+{% set version = "0.2.15" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_kernel-{{ version }}.tar.gz
-  sha256: bc47de49ac6e0d55c7cd9d9bfee586a2b7a9b7300391bb1adb927e9e8478821d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_kernel-{{ version }}.tar.gz
+  sha256: 2b945d7261fc252b8df6760308106fe4c65aeb4dd66b93b69af40e92b35fe7b7
 
 build:
   noarch: python
