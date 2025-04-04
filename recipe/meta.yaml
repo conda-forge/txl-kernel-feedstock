@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "txl-kernel" %}
-{% set version = "0.2.15" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_kernel-{{ version }}.tar.gz
-  sha256: 2b945d7261fc252b8df6760308106fe4c65aeb4dd66b93b69af40e92b35fe7b7
+  sha256: 80105ef1411f26eb09465c613add8deab5256b497213c1d86cbd22a4bd67e76b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
